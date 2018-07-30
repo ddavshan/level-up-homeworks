@@ -44,20 +44,12 @@ footer {
 /*Header style*/
 header {
   height: 60px;
-  position: relative;
-}
-.menu {
-  position: absolute;
-  left: : 0;
-  top: 50%;
-  margin-top: -8px;
-  padding-left: 25px;
+  padding: 22px 25px;
 }
 .autorization {
   position: absolute;
   right: 0;
-  top: 50%;
-  margin-top: -8px;
+  top: 22px;
   padding-right: 25px;
 }
 
@@ -86,17 +78,10 @@ table {
 }
 td {
   border: 1px solid #444;
-}
-td {
-  height: 420px;
-  position: relative;
+  padding: 20px 55px;
 }
 img {
-  width: 380px;
-  position: absolute;
-  left: 50%;
-  margin-top: -190px;
-  margin-left: -190px;
+  margin: auto;
 }
 
 /*Form style*/
@@ -107,28 +92,26 @@ input {
   border: 1px solid #444;
   font-size: 16px;
   margin-right: 30px;
-  padding: 6.8px 15px;
+  padding: 0px 15px;
+  height: 36px;
 }
 button {
   border: 1px solid #444;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 8px 15px;
+  padding: 0px 15px;
+  height: 36px;
 }
 button:hover {
-  border: 1px solid orange;
+  border-color: orange;
 }
 
 /*Footer style*/
 footer {
   height: 60px;
-  position: relative;
+  padding-top: 22px;
 }
 footer p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -8px;
-  margin-left: -77.375px;
   font-size: 16px;
+  text-align: center;
 }
