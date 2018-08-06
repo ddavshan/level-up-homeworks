@@ -1,0 +1,44 @@
+.container {
+  width: 300px;
+  height: 300px;
+}
+.container div {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.purple-square {
+  width: 70px;
+  height: 70px;
+  background-color: #8E44AD;
+ }
+.orange-square {
+  width: 70px;
+  height: 70px;
+  background-color: #F1C40F;
+ }
+.green-rectangle {
+  width: 145px;
+  height: 70px;
+  background-color: #2ECC71;
+}
+.red-rectangle {
+  width: 70px;
+  height: 145px;
+  background-color: #E74C3C;
+}
+.v-blue-rectangle {
+  width: 70px;
+  height: 220px;
+  background-color: #3498DB;
+}
+.h-blue-rectangle {
+  width: 220px;
+  height: 70px;
+  background-color: #3498DB;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
