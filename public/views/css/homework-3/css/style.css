@@ -46,7 +46,7 @@ footer {
   background-color: #3F51B5;
   color: #fff;
   font-weight: bold;
-  padding-left: 25px;
+  padding: 0 25px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
   z-index: 1;
 }
@@ -59,9 +59,6 @@ footer {
 }
 
 /*Main*/
-main {
-  text-align: center;
-}
 h1 {
   text-align: left;
   font-size: 30px;
@@ -74,28 +71,34 @@ h1 {
 button {
   position: absolute;
   top: 0;
+  left: 0;
   padding: 10px;
+}
+nav :last-child {
+  margin-right: 0;
 }
 .content {
   padding: 120px 0 70px 0;
-  margin: 0 auto;
 }
 .container {
   width: 1170px;
-  font-size: 0;  
+  font-size: 0;
+  margin: 0 auto;  
+}
+.row {
+  margin: 0 -15px;
+}
+.column {
+  width: 33.333333333333336%;
+  display: inline-block;
+  padding: 0 15px;
 }
 .card {
-  display: inline-block;
-  text-align: left;
-  width: 370px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
   margin-bottom: 30px;
   font-size: 16px;
 }
-.card:nth-child(3n-1) {
-  margin: 0 30px;
-}
-.card div img {
+.card-image {
   width: 100%;
 }
 .card-content {
@@ -123,18 +126,21 @@ button {
 .card-content a:active {
   background-color: #141d54;
 }
-.page-selector {
+.pages-nav {
   font-size: 16px;
   text-align: center;
 }
+.pages-nav-item {
+  text-decoration: underline;
+  margin-right: 30px;
+}
+.pages-nav-item:last-child {
+  margin-right: 0;
+}
 .active {
   font-weight: bold;
+  text-decoration: none;
 }
-.unactive {
-  text-decoration: underline;
-  margin-left: 30px;
-}
-
 
 /*Footer*/
 .footer {
