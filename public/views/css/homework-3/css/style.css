@@ -52,7 +52,7 @@ footer {
 }
 .header a {
   display: inline-block;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 .nav-active {
   text-decoration: underline;
@@ -77,10 +77,12 @@ button {
   padding: 10px;
 }
 .content {
-  width: 1170px;
   padding: 120px 0 70px 0;
   margin: 0 auto;
-  font-size: 0;
+}
+.container {
+  width: 1170px;
+  font-size: 0;  
 }
 .card {
   display: inline-block;
@@ -90,10 +92,10 @@ button {
   margin-bottom: 30px;
   font-size: 16px;
 }
-.card:nth-child(3n) {
+.card:nth-child(3n-1) {
   margin: 0 30px;
 }
-.card img {
+.card div img {
   width: 100%;
 }
 .card-content {
@@ -125,13 +127,14 @@ button {
   font-size: 16px;
   text-align: center;
 }
-.page-selector span {
+.active {
   font-weight: bold;
 }
-.page-selector a {
+.unactive {
   text-decoration: underline;
   margin-left: 30px;
 }
+
 
 /*Footer*/
 .footer {
