@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 70px;
+}
+.list {
+
+}
+.list__item {
+  border: 1px solid #efefef;
+
+}
+.list__item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.list__content {
+  
+}
+.list__status {
+  float: right;
+  color: #fff;
+  line-height: 34px;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+.list__status--approved {
+  background-color: #43a047;
+}
+.list__status--pending {
+  background-color: #e65100;
+}
+.list__status--error {
+  background-color: #f44336;
+}

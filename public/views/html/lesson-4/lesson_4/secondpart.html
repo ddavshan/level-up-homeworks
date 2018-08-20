@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Semantics</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        height: 100%;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+      }
+      figure {
+        margin: 0;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 1170px;
+        height: 100%;
+        padding: 0 15px;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+        height: 80px;
+        padding: 0 15px;
+        background-color: beige;
+      }
+      .main {
+        flex: 1 0 auto;
+      }
+      .footer {
+        flex-shrink: 0;
+        padding: 40px 15px;
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+      }
+      .logo {
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+<!-- <div class="wrapper">
+      <div class="header">
+        <ul class="nav">
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus dolor dolore, suscipit, illum vel sunt voluptatibus nulla sit veritatis repudiandae eius deserunt, voluptates asperiores. Dolorem, exercitationem ut. Nostrum, earum.
+        </p>
+      </div>
+      <div class="footer">
+        <ul class="footer-nav">
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <div class="wrapper">
+      <header class="header"> <!--шапка чего угодно, не обязательно сайта-->
+       <img class="logo" src="" alt="">
+       <nav class="nav">
+         <a href="">link 1</a>
+         <a href="">link 2</a>
+         <a href="">link 3</a>
+         <a href="">link 4</a>
+       </nav>
+      </header>
+      <main class="main"> <!--содержит основную тематику сайта-->
+        <article> <!--все, что находится в єтом теге может быть перенесено на друггую страницу, и смысл страницы от этого не изменится-->
+         <h1>Main heading</h1>
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolorum rem accusamus voluptas animi, amet quibusdam dolorem ab, totam dolores consectetur ducimus ullam ea quod quaerat accusantium mollitia molestiae vero sunt. Explicabo libero amet officia, ratione dolore fugit, natus odit et placeat, debitis vel quidem dolores exercitationem sint voluptate recusandae minima ad hic ab, maxime illo atque expedita voluptatem. Enim id doloremque ad dignissimos molestias dolores atque illum dolorem culpa voluptates accusantium fugiat, laudantium quidem velit adipisci sint architecto impedit tempore distinctio saepe asperiores minus eligendi, tenetur totam. Illo quisquam voluptatem porro quas error adipisci magnam. Cumque rerum tempore autem.
+         </p> 
+        </article>
+        <section> <!--для группирования контента-->
+          <h2>Subheading</h2>
+          <time datetime="2018-07-18T19:24:11+03:00">7/18/2018</time>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores modi inventore alias excepturi cumque minima placeat cupiditate quibusdam suscipit optio! Nostrum molestiae in officiis blanditiis ipsum nisi cumque vel distinctio.
+          </p> 
+        </section>
+      </main>
+      <aside> <!--для сайдбаров-->
+        <form>
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" />
+          </p>
+        </form>
+        <figure> <!--для отображения графического контента-->
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <figcaption> <!--подпись, только в figure-->
+            Author
+          </figcaption>
+        </figure>        
+      </aside>
+      <footer class="footer">
+        footer
+      </footer>
+    </div>
+  </body>
+</html>

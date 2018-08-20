@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework-4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        width: 100%;
+      }
+      th, td {
+        vertical-align: middle;
+        padding: 16px;
+      }
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      nav a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+      }
+      header {
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+      }
+      .table {
+        margin-bottom: 24px;
+        border-collapse: collapse;
+      }
+      .table th, .table td {
+        border: 1px solid #ccc;
+      }
+      form select {
+        display: block;
+        width: 120px;
+        height: 32px;
+      }
+      footer {
+        background-color: #222;
+      }
+      footer a {
+        color: #fff;
+        font-weight: bold;
+      }
+      input:not([type="checkbox"]):not([type="radio"]), textarea {
+        display: block;
+        width: 100%;
+        height: 32px;
+      }
+      textarea {
+        height: 80px;
+      }
+      input[type="file"] {
+        margin-top: 6px;
+      }
+      body > div > * {
+        padding: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <a href="">
+            <img src="./img/ic_home_black_24dp.png" alt="" />
+            Home
+          </a>
+          <a href="">
+            <img src="./img/ic_import_contacts_black_24dp.png" alt="" />
+            Portfolio
+          </a>
+          <a href="">
+            <img src="./img/ic_description_black_24dp.png" alt="" />
+            About
+          </a>
+          <a href="">
+            <img src="./img/ic_contacts_black_24dp.png" alt="" />
+            Contacts
+          </a>
+        </nav>        
+      </header>
+      <div>
+        <main class="main">
+          <article>
+            <h1>Page title</h1>
+            <p>
+              Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit.</strong> In aliquam distinctio, repudiandae voluptas odio totam voluptate illo dolor expedita tempore. Voluptatum consequatur voluptatibus et, ab atque alias, sequi numquam magni.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. <em>Mollitia laboriosam repellat</em> quod veniam, nihil earum perferendis provident, culpa minus quidem rem odio deserunt accusamus veritatis magnam voluptatum eveniet itaque nemo!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, voluptates voluptatibus dolor.
+            </p>
+          </article>        
+        </main>
+        <div>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>
+                  <form>
+                    <h2>Log in</h2>
+                    <p>
+                      <input type="email" placeholder="Email*" name="log_email" required="required" />
+                    </p>
+                    <p>
+                      <input type="password" placeholder="Password*" name="password" required="required" />
+                    </p>
+                    <p>
+                      <button type="submit">Log in</button>
+                      <button type="reset">Reset form</button>
+                    </p>
+                  </form>
+                </td>
+                <td>
+                  <form>
+                    <h2>Register</h2>
+                    <p>
+                      <label for="first-name">First name*</label>
+                      <input id="first-name" type="text" name="first_name" required="required" />
+                    </p>
+                    <p>
+                      <label for="last-name">Last name*</label>
+                      <input id="last-name" type="text" name="last_name" required="required" />
+                    </p>
+                    <p>
+                      <label for="reg-email">Email*</label>
+                      <input id="reg-email" type="email" name="reg_email" required="required" />
+                    </p>
+                    <p>
+                      <label>Age</label>
+                      <select name="age">
+                        <option value="1">18</option>
+                        <option value="2">19</option>
+                        <option value="3">20</option>
+                        <option value="4">21</option>
+                        <option value="5">22</option>
+                        <option value="6">23</option>
+                        <option value="7">24</option>
+                        <option value="8">25</option>
+                        <option value="9">26</option>
+                        <option value="10">27</option>
+                        <option value="11">28</option>
+                        <option value="12">29</option>
+                        <option value="13">30</option>
+                        <option value="14">31</option>
+                        <option value="15">32</option>
+                        <option value="16">33</option>
+                        <option value="17">34</option>
+                        <option value="18">35</option>
+                        <option value="19">36</option>
+                        <option value="20">37</option>
+                        <option value="21">38</option>
+                        <option value="22">39</option>
+                        <option value="23">40</option>
+                        <option value="24">41</option>
+                        <option value="25">42</option>
+                        <option value="26">43</option>
+                        <option value="27">44</option>
+                        <option value="28">45</option>
+                        <option value="29">46</option>
+                        <option value="30">47</option>
+                        <option value="31">48</option>
+                        <option value="32">49</option>
+                        <option value="33">50</option>
+                        <option value="34">51</option>
+                        <option value="35">52</option>
+                        <option value="36">53</option>
+                        <option value="37">54</option>
+                        <option value="38">55</option>
+                        <option value="39">56</option>
+                        <option value="40">57</option>
+                        <option value="41">58</option>
+                        <option value="42">59</option>
+                        <option value="43">60</option>
+                      </select>
+                    </p>
+                    <p>
+                      <label for="notice">Notice</label>
+                      <textarea id="notice" name="notice" placeholder="Write some notice..."></textarea> 
+                    </p>
+                    <p>
+                      <input id="subscription" type="checkbox" name="subscription" checked="checked" value="1" />
+                      <label for="subscription">Subscribe to newsletter</label>
+                    </p>
+                    <p>
+                      <input id="agreement" type="checkbox" name="agreement" required="required" value="1" />
+                      <label for="agreement">
+                        I am agree with 
+                        <a href="">Terms of Use and User Agreement</a>
+                      </label>
+                    </p>
+                    <p>
+                      <label for="avatar">Choose your avatar</label>
+                      <input id="avatar" type="file" name="avatar" accept="image/*" />
+                    </p>
+                    <p>
+                      <button type="submit">Register</button>
+                      <button type="reset">Reset form</button>
+                    </p>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table class="table">
+            <caption>Just a tricky table</caption>
+            <tbody>
+              <tr>
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td>7</td>
+                <td>15</td>
+                <td>15</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4</td>
+                <td colspan="2" rowspan="3">5</td>
+                <td colspan="2">6</td>
+                <td>87</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td rowspan="2">9</td>
+                <td colspan="2">11</td>
+                <td>78</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>89</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td colspan="3" rowspan="4">45</td>
+                <td>33</td>
+                <td>52</td>
+                <td>93</td>
+                <td rowspan="3">22</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td colspan="2">49</td>
+              </tr>
+              <tr>
+                <td>65</td>
+                <td>54</td>
+                <td>69</td>
+              </tr>
+              <tr>
+                <td colspan="4">36</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <footer class="footer">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    <a href="">Link1</a>
+                  </li>
+                  <li>
+                    <a href="">Link2</a>
+                  </li>
+                  <li>
+                    <a href="">Link3</a>
+                  </li>
+                  <li>
+                    <a href="">Link4</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <a href="">Link1</a>
+                  </li>
+                  <li>
+                    <a href="">Link2</a>
+                  </li>
+                  <li>
+                    <a href="">Link3</a>
+                  </li>
+                  <li>
+                    <a href="">Link4</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <a href="">Link1</a>
+                  </li>
+                  <li>
+                    <a href="">Link2</a>
+                  </li>
+                  <li>
+                    <a href="">Link3</a>
+                  </li>
+                  <li>
+                    <a href="">Link4</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>        
+      </footer>   
+    </div>
+  </body>
+</html>

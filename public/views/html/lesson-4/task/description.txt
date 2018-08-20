@@ -1,0 +1,81 @@
+﻿как обычно соблюдаем правила форматирования, проверяем валидность
+
+1 часть ДЗ
+  - сделать HTML разметку страницы по картинке
+  - использовать можно только изученные нами элементы
+  - использовать семантическую разметку (header, footer, main, aside, nav, etc.)
+  - иконки навигации находятся в архиве
+  - в разделе Log in все поля обязательные
+  - в разделе Register поля со звездочкой обязательные
+  - в разделе Register age от 18 до 60
+  - I am agree with Terms of Use and User Agreement обязательный
+  - возможность загрузить фото (принимаются только картинки, но в любом формате)
+  - таблицам с логином, регистрацией и Just a tricky table дать класс table
+  - поломать голову над таблицей
+  - для стилей вставить это в конце head (если что то отображается не так, как на картинке, значит не правильная разметка)
+  - кроме этих стилей, использовать ничего нельзя, это пока что ДЗ только по HTML
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      table {
+        width: 100%;
+      }
+      th, td {
+        vertical-align: middle;
+        padding: 16px;
+      }
+      img {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      nav a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+      }
+      header {
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+      }
+      .table {
+        margin-bottom: 24px;
+        border-collapse: collapse;
+      }
+      .table th, .table td {
+        border: 1px solid #ccc;
+      }
+      form select {
+        display: block;
+        width: 120px;
+        height: 32px;
+      }
+      footer {
+        background-color: #222;
+      }
+      footer a {
+        color: #fff;
+        font-weight: bold;
+      }
+      input:not([type="checkbox"]):not([type="radio"]), textarea {
+        display: block;
+        width: 100%;
+        height: 32px;
+      }
+      textarea {
+        height: 80px;
+      }
+      input[type="file"] {
+        margin-top: 6px;
+      }
+      body > div > * {
+        padding: 24px;
+      }
+    </style>
+
+Вторая часть ДЗ
+  - ознакомится с BEM https://ru.bem.info/methodology/quick-start/ (не обязательное задание)
+  

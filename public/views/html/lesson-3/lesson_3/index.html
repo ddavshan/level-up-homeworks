@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1" cellpadding="10">
+      <tbody>
+        <tr>
+          <td>cell 1</td>
+          <td colspan="2">cell 2</td>
+          <td>cell 4</td>
+         </tr>
+         <tr>
+           <td>cell 1</td>
+           <td rowspan="2">cell 2</td>
+           <td colspan="2">cell 3</td>
+         </tr>
+         <tr>
+          <td>cell 1</td>
+          <td>cell 3</td>
+          <td>cell 4</td>
+         </tr>
+      </tbody>
+    </table>
+    <br />
+    <form action="/feedback" method="ger"> <!--method="post" не отображает значения формы в url строке-->
+      <fieldset>
+        <legend>Form fieldset</legend>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi omnis repellat quam facere, perspiciatis recusandae dicta hic voluptatem quidem nisi. Quos quo voluptate suscipit minus cupiditate odit, explicabo, commodi.
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <p>
+          <label for="name">Your name</label>
+        </p>
+        <p>
+          <input id="name" type="text" value="Name" name="name" maxlength="8" size="25" autofocus="autofocus" />
+        </p>
+        <p>
+          <label for="last_name">Last name</label>
+        </p>
+        <p>
+          <input id="last_name" type="text" placeholder="Last name..." name="last_name" />
+        </p>
+        <p>
+          <label for="email">E-mail</label>
+        </p>
+        <p>
+          <input id="email" type="email" name="email" required="required" /> <!--required делает поле обязательным для заполнения-->
+        </p>
+        <p>
+          <label for="number">Number</label>
+        </p>
+        <p>
+          <input id="number" type="number" name="number" required="required" min="10" max="20" />
+        </p>
+        <p>
+          <label for="password">Password</label>
+        </p>
+        <p>
+          <input id="password" type="password" name="number" required="required" />
+        </p>
+        <p>
+          <label>FEE</label>
+        </p>
+        <p>
+          <input type="text" name="fee" value="14" readonly="readonly" />
+        </p>
+        <p>
+          <label>Discount</label>
+        </p>
+        <p>
+          <input type="text" name="discount" value="2" disabled="disabled" />
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="color" value="green" />
+            Green
+          </label>
+          <label for="color-blue">Blue</label>
+          <input id="color-blue" type="radio" name="color" value="blue" />
+          <input id="color-yellow" type="radio" name="color" value="yellow" />
+          <label for="color-yellow">Yellow</label>
+        </p>
+        <hr />
+        <p>
+          <strong>Gender</strong>
+        </p>
+        <p>
+          <input id="male" type="radio" name="gender" value="1" />
+          <label for="male">Male</label>
+        </p>
+        <p>
+          <input id="female" type="radio" name="gender" value="2" />
+          <label for="female">Female</label>
+        </p>
+        <p>
+          <strong>Checkboxes</strong>
+        </p>
+        <p>
+          <input id="car-audi" type="checkbox" name="car" value="1" />
+          <label for="car-audi">Audi</label>
+        </p>
+        <p>
+          <input id="car-renault" type="checkbox" name="car" value="2" />
+          <label for="car-renault">Renault</label>
+        </p>
+        <p>
+          <input id="car-bmw" type="checkbox" name="car" value="3" />
+          <label for="car-bmw">BMW</label>
+        </p>
+        <p>
+          <input id="agreement" type="checkbox" name="agreement" value="1" required="required" />
+          <label for="agreement">I agree with...</label>
+        </p>
+        <p>
+          <label>Age</label>
+          <select name="age" id="age">
+            <option value="1">I am 1</option> <!--option[value=$]{I am $}*4-->
+            <option value="2">I am 2</option>
+            <option value="3">I am 3</option>
+            <option value="4">I am 4</option>
+          </select>
+        </p>
+        <p>
+          <label>Book(s)</label>
+          <select name="books" multiple="multiple" size="2">
+            <optgroup label="First">
+              <option value="1">The lord of the rings</option>            
+             <option value="2" selected="selected">1984</option>             
+            </optgroup>
+            <optgroup label="Second">
+              <option value="3">Dorian Gray</option>
+            </optgroup>           
+          </select>
+        </p>
+        <p>
+          <input type="file" name="file" multiple="multiple" accept="image/png" />
+        </p>
+        <button type="submit">Submit</button>
+        <!-- <input type="submit" value="Send" /> отправляет форму на сервер-->
+        <!-- <input type="button" value="just a button"> ничего не делающая кнопка -->
+        <button type="button"> <!--button без type имеет type submit-->
+          <span>
+            Just a button
+            <i>123</i>
+          </span>
+        </button>
+        <button type="reset">Button reset</button>
+      </fieldset>
+    </form> 
+  </body>
+</html>

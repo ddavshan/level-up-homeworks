@@ -1,0 +1,25 @@
+Useful resources
+1) http://htmlbook.ru/
+2) https://html5book.ru/
+3) http://validator.w3.org/
+4) https://www.w3schools.com/
+5) https://developer.mozilla.org
+
+Homework
+sign up on https://github.com/
+
+install git (default installation)
+install ruby LTS
+install node server
+install Phootshop (not required yet)
+install any text editor (Sublime 3 is advised)
+check and install Package control if needed
+
+Sublime text required settings:
+  "index_files": false,
+  "show_encoding": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "word_wrap": true
+
+https://www.youtube.com/watch?v=LrM1r23bBxs - Sublime text useful review
