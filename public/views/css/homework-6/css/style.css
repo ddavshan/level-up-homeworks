@@ -6,6 +6,7 @@
 }
 .list__item {
   border: 1px solid #efefef;
+  padding: 15px;
 
 }
 .list__item:after {
@@ -14,8 +15,13 @@
   clear: both;
 }
 .list__content {
-  
+  line-height: 34px;
 }
+/*.list__content:before {
+  width: 50px;
+  height: 50px;
+  background-color: #efefef;
+}*/
 .list__status {
   float: right;
   color: #fff;
