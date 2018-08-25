@@ -1,13 +1,13 @@
 .wrapper {
   padding: 70px;
 }
-.list {
 
+.list {
+  
 }
 .list__item {
   border: 1px solid #efefef;
   padding: 15px;
-
 }
 .list__item:after {
   content: "";
@@ -15,13 +15,46 @@
   clear: both;
 }
 .list__content {
-  line-height: 34px;
+  
 }
-/*.list__content:before {
-  width: 50px;
-  height: 50px;
+.list__content:before {
+  content: "";
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
   background-color: #efefef;
-}*/
+}
+
+
+.sprite {
+  margin-bottom: 32px;
+  padding-left: 30px;
+  font-size: 24px;
+  position: relative;
+}
+.sprite:before {
+  content: "";
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  background: url("http://www.trenatics.com/public/images/iconfile/sprites/css-sprite/sprite-action-black.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.sprite-1:before {
+  background-position: -346px -74px;
+}
+.sprite-2:before {
+  background-position: -244px -40px;
+}
+.sprite-3:before {
+  background-position: -74px -380px;
+}
+
+
+
 .list__status {
   float: right;
   color: #fff;
@@ -29,6 +62,7 @@
   font-size: 16px;
   padding: 0 10px;
   border-radius: 3px;
+  vertical-align: bottom;
 }
 .list__status--approved {
   background-color: #43a047;
@@ -38,4 +72,38 @@
 }
 .list__status--error {
   background-color: #f44336;
+}
+
+/*.container {
+  display: inline-block;
+  border: 2px solid red;
+  height: 300px;
+  width: 100%;
+  background-color: #efefef;
+}
+.test {
+  vertical-align: middle;
+}*/
+
+.outer {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #ffc;
+}
+.inner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    background-color: #fcc;
+}
+.outer:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+.wrap {
+  font-size: 0;
 }
