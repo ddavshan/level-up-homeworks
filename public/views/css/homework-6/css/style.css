@@ -1,109 +1,67 @@
 .wrapper {
   padding: 70px;
 }
-
 .list {
-  
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
 }
 .list__item {
+  display: table;
   border: 1px solid #efefef;
   padding: 15px;
 }
-.list__item:after {
-  content: "";
-  display: block;
-  clear: both;
-}
 .list__content {
-  
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 19px;
 }
-.list__content:before {
-  content: "";
+.list__icon {
+  display: table-cell;
+  vertical-align: top;
+}
+.icon {
   display: inline-block;
-  float: left;
-  width: 40px;
-  height: 40px;
-  background-color: #efefef;
+  width: 36px;
+  height: 36px;
+  background: url("../img/icons.png") no-repeat;
 }
-
-
-.sprite {
-  margin-bottom: 32px;
-  padding-left: 30px;
-  font-size: 24px;
-  position: relative;
+.icon--smile {
+  background-position: -112px -41px;
 }
-.sprite:before {
-  content: "";
-  margin-top: -11px;
-  width: 22px;
-  height: 22px;
-  background: url("http://www.trenatics.com/public/images/iconfile/sprites/css-sprite/sprite-action-black.png") no-repeat;
-  position: absolute;
-  top: 50%;
-  left: 0;
+.icon--pen {
+  background-position: -112px -77px;
 }
-.sprite-1:before {
-  background-position: -346px -74px;
+.icon--cat {
+  background-position: -1px -150px;
 }
-.sprite-2:before {
-  background-position: -244px -40px;
-}
-.sprite-3:before {
-  background-position: -74px -380px;
-}
-
-
-
-.list__status {
-  float: right;
+.status {
   color: #fff;
-  line-height: 34px;
+  line-height: 36px;
   font-size: 16px;
   padding: 0 10px;
   border-radius: 3px;
   vertical-align: bottom;
 }
-.list__status--approved {
+.status--approved {
   background-color: #43a047;
 }
-.list__status--pending {
+.status--pending {
   background-color: #e65100;
 }
-.list__status--error {
+.status--error {
   background-color: #f44336;
 }
-
-/*.container {
-  display: inline-block;
-  border: 2px solid red;
-  height: 300px;
-  width: 100%;
-  background-color: #efefef;
-}
-.test {
-  vertical-align: middle;
-}*/
-
-.outer {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    background-color: #ffc;
-}
-.inner {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    background-color: #fcc;
-}
-.outer:before {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    content: "";
-}
-.wrap {
-  font-size: 0;
+.circle {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: radial-gradient(#fff,#da8ada);
+  background-size: 5px 5px;
+  box-shadow: 20px 0 0 rgba(255, 0, 0, 0.4) inset,
+    0 20px 0 rgba(0, 255, 0, 0.4) inset,
+    0 -20px 0 rgba(0, 0, 255, 0.4) inset,
+    -20px 0 0 rgba(255, 255, 0, 0.4) inset;
 }
