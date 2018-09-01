@@ -10,16 +10,15 @@
   border: 1px solid #efefef;
   padding: 15px;
 }
-.list__content {
+.list__element {
   display: table-cell;
+  vertical-align: top;
+}
+.list__element--content {
   vertical-align: middle;
   width: 100%;
   padding: 0 15px;
   font-size: 19px;
-}
-.list__icon {
-  display: table-cell;
-  vertical-align: top;
 }
 .icon {
   display: inline-block;
@@ -37,12 +36,13 @@
   background-position: -1px -150px;
 }
 .status {
+  display: inline-block;
   color: #fff;
   line-height: 36px;
+  height: 36px;
   font-size: 16px;
   padding: 0 10px;
   border-radius: 3px;
-  vertical-align: bottom;
 }
 .status--approved {
   background-color: #43a047;
