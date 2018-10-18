@@ -9,11 +9,11 @@ admin = name;
 console.log(admin);
 
 //Task 2
-var namePlanet = 'Земля';
-var nameVisitor = 'Петя';
+var planetName = 'Земля';
+var visitorName = 'Петя';
 
 //Task 3
-var framesPerSecond;
-var wordsConSign;
-var documentView;
-var lastPageNavRequire;
+var fps;
+var wordsConnectiveSign;
+var documentViewMode;
+var showLastPageNav;
