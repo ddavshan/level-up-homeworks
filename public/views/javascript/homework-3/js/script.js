@@ -1,4 +1,9 @@
 'use strict';
+// Task 11
+var name;
+name = prompt('What is your name?', '');
+alert('Hello ' + name + '!');
+
 // Task 12.1
 if ("0") {
   alert( 'Привет' );
@@ -23,7 +28,7 @@ if (value > 0) {
   alert(1);
 } else if (value < 0) {
   alert(-1);
-} else if (value == 0) {
+} else if (value === 0) {
   alert(0); 
 }
 
@@ -32,7 +37,7 @@ var login;
 var pass;
 
 login = prompt('Введите логин:', '');
-if (login == null) {
+if (login === null) {
   alert('Вход отменен')
 } else if (login !== 'Админ') {
   alert('Я вас не знаю')
@@ -40,7 +45,7 @@ if (login == null) {
   pass = prompt('Введите пароль:', '');
   if (pass === 'Чёрный Властелин') {
     alert('Добро пожаловать!');
-  } else if (pass == null) {
+  } else if (pass === null) {
     alert('Вход отменен');
   } else {
     alert('Пароль неверен');
@@ -64,7 +69,8 @@ alert( null || 2 || undefined );
 
 // Task 13.2
 alert(alert(1) || 2 || alert(3));
-// Проверим во что преобразуется alert
+// Выполняется первый alert  и выводит 1.
+// Проверим какое значение возвращает alert:
 console.log(typeof alert());
 // alert выводится как undefined, следовательно первым правдивым значением будет 2, выведется 2
 
