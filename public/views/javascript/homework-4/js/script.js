@@ -1,4 +1,5 @@
 'use strict';
+
 // Task 15.1
 // var i = 3;
 
@@ -38,11 +39,6 @@
 //   }
 // }
 
-// for (var i = 2; i <= 10; i += 1) {
-//   if (i % 2 !== 0) continue;
-//   console.log(i);
-// }
-
 // Task 15.5
 // var i = 0;
 // while (i < 3) {
@@ -53,8 +49,8 @@
 // Task 15.6
 // var value;
 // do {
-// value = prompt('Введите число, большее 100:', '');
-// } while (value < 100 && value !== null)
+//   value = prompt('Введите число, большее 100:', '');
+// } while (value <= 100 && value !== null)
 
 // Task 15.7
 // Логика вычисления:
@@ -66,7 +62,8 @@
 //   for (var i = 2; i <= 10; i += 1) {
 
 //     for (var j = 2; j < i; j += 1) {
-//       if (i % j === 0) continue nextPrime;
+//       if (i % j === 0) {
+//       } continue nextPrime;
 //     }
 //     console.log(i);
 //   }
@@ -98,9 +95,9 @@
 // if (browser === 'IE') {
 //   alert('О, да у вас IE!');
 // } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
-//     alert('Да, и эти браузеры мы поддерживаем');
+//   alert('Да, и эти браузеры мы поддерживаем');
 // } else {
-//     alert('Мы надеемся, что и в вашем браузере все ок!');
+//   alert('Мы надеемся, что и в вашем браузере все ок!');
 // }
 
 // Task 16.2
@@ -118,21 +115,24 @@
 // }
 
 // My code:
-// var a = + prompt('a?', '');
+// var a = +prompt('a?', '');
 
 // switch (a) {
-//   case 0:
+//   case 0: {
 //     alert(0);
 //     break;
+//   }
 
-//   case 1:
+//   case 1: {
 //     alert(1);
 //     break;
+//   } 
 
 //   case 2:
-//   case 3:
+//   case 3: {
 //     alert('2,3');
 //     break;
+//   } 
 // }
 
 // Task 17.1
@@ -193,20 +193,35 @@
 // console.log(min(1, 1));
 
 // Task 17.4
-// var x = prompt('Enter the X:', '');
-// var n = prompt('Enter the N', '');
-
 // function pow (x, n) {
 //   var result = x;
 //   var i;
 //   for (i = 1; i < n ; i += 1) {
 //     result *= x;
-//   } return alert(x + ' in ' + n + ' degree is ' + result);
+//   }
+//   return result;
 // }
 
-// if (n >= 1) {
-//   pow(x, n);
+// var x = prompt('Enter the X:', '');
+
+// if (isNaN(x)) {
+//   do {
+//     x = prompt('X should be a number:', '');
+//   } while(x !== null && isNaN(x));
+// };
+
+// if (x === null) {
+//   alert('Calculation is canceled.');
 // } else {
-//   n = prompt('Enter postive integer N:', '');
-//   pow(x, n);
+//   var n = prompt('Enter the N:', '');
+
+//   while(n !== null && (isNaN(n) || +n < 1)) {
+//     n = prompt('Enter positive integer N:', '');
+//   };
+
+//   if (n === null) {
+//     alert('Calculation is canceled.');
+//   } else {
+//     alert(x + ' in ' + n + ' degree is ' + pow(x, n));
+//   }
 // }

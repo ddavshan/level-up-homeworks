@@ -1,4 +1,5 @@
 'use strict';
+
 // Task 11
 var name;
 name = prompt('What is your name?', '');
