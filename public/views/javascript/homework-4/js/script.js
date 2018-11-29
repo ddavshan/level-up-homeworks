@@ -60,10 +60,10 @@
 
 // nextPrime:
 //   for (var i = 2; i <= 10; i += 1) {
-
 //     for (var j = 2; j < i; j += 1) {
 //       if (i % j === 0) {
-//       } continue nextPrime;
+//         continue nextPrime;
+//       }
 //     }
 //     console.log(i);
 //   }
@@ -136,7 +136,7 @@
 // }
 
 // Task 17.1
-// function checkAge(age) {
+// function checkAge (age) {
 //   if (age > 18) {
 //     return true;
 //   } else {
@@ -148,7 +148,7 @@
 // else не обязательно. При правдивом значении мы попадаем в if и выполняется return true, если мы не попадаем в if выполняется 144 строка.
 
 // Task 17.2
-// function checkAge(age) {
+// function checkAge (age) {
 //   if (age > 18) {
 //     return true;
 //   } else {
@@ -158,14 +158,14 @@
 
 // using '?'
 // var age = prompt('Enter your age:', '')
-// function checkAge(age) {
+// function checkAge (age) {
 //   return age > 18 ? true : confirm('Родители разрешили?');
 // }
 // checkAge(age);
 
 // using '||'
 // var age = prompt('Enter your age:', '')
-// function checkAge(age) {
+// function checkAge (age) {
 //   return (age > 18) || confirm('Родители разрешили?');
 // }
 // checkAge(age);
@@ -208,16 +208,16 @@
 //   do {
 //     x = prompt('X should be a number:', '');
 //   } while(x !== null && isNaN(x));
-// };
+// }
 
 // if (x === null) {
 //   alert('Calculation is canceled.');
 // } else {
-//   var n = prompt('Enter the N:', '');
+//   var n = prompt('Enter the N:', '')
 
 //   while(n !== null && (isNaN(n) || +n < 1)) {
 //     n = prompt('Enter positive integer N:', '');
-//   };
+//   }
 
 //   if (n === null) {
 //     alert('Calculation is canceled.');

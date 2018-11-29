@@ -9,8 +9,8 @@
 // sumTo(100) = 100 + 99 + ... + 2 + 1 = 5050
 
 // using cycle
-// function sumTo(n) {
-//   for (var sum = n; n !== 1; n -= 1) {
+// function sumTo (n) {
+//   for (var sum = n; n > 1; n -= 1) {
 //     sum += n - 1;
 //   }
 //   return sum;
@@ -19,16 +19,15 @@
 // console.log(sumTo(100));
 
 // using recursion
-// function sumTo(n) {
-//   return n !== 1 ? (n + sumTo(n - 1)) : n;
+// function sumTo (n) {
+//   return n > 1 ? (n + sumTo(n - 1)) : n;
 // }
 
 // console.log(sumTo(100));
 
 // using formula
-// function sumTo(n) {
-//   var sum = n * (n + 1) / 2;
-//   return sum;
+// function sumTo (n) {
+//   return n * (n + 1) / 2;
 // }
 
 // console.log(sumTo(100));
@@ -37,29 +36,26 @@
 // sumTo(100000) = Error, recursion has limited value of iterations
 
 // Task 2.19.2
-// function factorial(n) {
-//   return n !== 1 ? (n * factorial(n - 1)) : n;
+// function factorial (n) {
+//   return n > 1 ? (n * factorial(n - 1)) : n;
 // }
 
 // console.log(factorial(5));
 
 // Task 2.19.3
 // using cicle
-// function fib(n) {
-//   var value1 = 1;
-//   var value2 = 1;
+// function fib (n) {
+//   let a = 1;
+//   let b = 1;
+//   let c = 1;
 
-//   if (n < 3) {
-//     return value1;
-//   } else {
-//     for (var i = 2; i < n; i += 1) {
-//       var result = value1 + value2;
-      
-//       value1 = value2;
-//       value2 = result;
-//     }
-//   } return result;
-// }
+//   for (var i = 2; i < n; i += 1) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+//   }
+//   return c;
+// } 
 
 // console.log(fib(1));
 // console.log(fib(2));
@@ -71,3 +67,16 @@
 // console.log(fib(8));
 // console.log(fib(9));
 // console.log(fib(77));
+
+// 2.20.1
+// function g () { return 1; }
+
+// alert(g);
+
+// in this case function is global and it's work everythere
+
+// (function g() { return 1; });
+
+// alert(g);
+
+// in this case g exist only inside ()
