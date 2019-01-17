@@ -21,22 +21,20 @@
 
 // Task 4.7.4
 // let arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'];
-// let rand = Math.floor(Math.random() * arr.length);
+// let rand = Math.floor(Math.random() * arr.length); // >>> DO YOU UNDERSTAND WHY RANDOM INTEGER IS GENERATED THIS WAY? WHY floor()? >>> this formula is given in condition: var rand = min + Math.floor(Math.random() * (max + 1 - min)); I don't undersrtand how it is work, I just used it. 
   
 // console.log(arr[rand]);
 
 // Task 4.7.5
 // let arr = [];
 // let sum = 0;
-// let i = 0;
 
 // while (true) {
 //   let a = prompt('Enter number:');
 //   if (a === null || a === '' || isNaN(a)) {
 //     break
 //   }
-//   arr[i] = +a;
-//   i += 1;
+//   arr.push(+a);
 // }
 
 // for (let j = 0; j < arr.length; j += 1) {
@@ -49,12 +47,16 @@
 // 5 and 5 because arr and arr2 are the same object
 
 // Task 4.7.7
-// let arr = ["test", 2, 1.5, false];
+// let arr = ["test", 2, 1.5, false, NaN];
 
 // function find (arr, value) {
 //   for (let i = 0; i < arr.length; i += 1) {
 //     if (arr[i] === value) {
 //       return i;
+//     } else if (isNaN(value)) {
+//       if (isNaN(arr[i]) && typeof(arr[i]) !== 'string') {
+//         return i;
+//       }
 //     }
 //   }
 //   return -1;
@@ -64,6 +66,7 @@
 // console.log(find(arr, 2)); // 1
 // console.log(find(arr, 1.5)); // 2
 // console.log(find(arr, 0)); // -1
+// console.log(find(arr, NaN)); // 4
 
 // Task 4.7.8
 // var arr = [5, 4, 3, 8, 0];
@@ -120,7 +123,7 @@
 
 //   for (let i = 0; i < arr.length; i += 1) {
 //     if (arr[i] === cls) {
-//       return; // why it doesn't work with break?
+//       return;
 //     }
 //   }
 
@@ -147,9 +150,7 @@
 //     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
 //   }
 
-//   str = arr.join('');
-
-//   return str;
+//   return arr.join('');
 // }
 
 // console.log(camelize('background-color'));
@@ -198,10 +199,10 @@
 // var arr = [5, 2, 1, -10, 8];
 
 // function compareNumeric (a, b) {
-//   return a - b;
+//   return b - a;
 // }
 
-// arr.sort(compareNumeric).reverse();
+// arr.sort(compareNumeric);
 // console.log(arr);
 
 // Task 4.8.6
@@ -293,7 +294,6 @@
 // Task 4.8.11
 // function unique (arr) {
 //   let obj = {};
-//   let result = [];
 //   let key;
 
 //   for (let i = 0; i < arr.length; i += 1) {
@@ -301,11 +301,7 @@
 //     obj[key] = key;
 //   }
 
-//   for (key in obj) {
-//     result.push(obj[key]);
-//   }
-
-//   return result;
+//   return Object.keys(obj);
 // }
 
 // var strings = ["кришна", "кришна", "харе", "харе",

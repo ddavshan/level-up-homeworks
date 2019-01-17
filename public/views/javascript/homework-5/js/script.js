@@ -45,14 +45,14 @@
 // Task 2.19.3
 // using cicle
 // function fib (n) {
-//   let a = 1;
+//   let a;
 //   let b = 1;
 //   let c = 1;
 
-//   for (var i = 2; i < n; i += 1) {
-//     c = a + b;
+//   for (let i = 2; i < n; i += 1) {
 //     a = b;
 //     b = c;
+//     c = a + b;
 //   }
 //   return c;
 // } 

@@ -87,9 +87,9 @@
 // Reverse the given string
 // (function () {
 //   function reverseStr (str) {
-//     let newStr = str[str.length - 1];
+//     let newStr = '';
 
-//     for (let i = str.length - 2; i >= 0; i -= 1) {
+//     for (let i = str.length - 1; i >= 0; i -= 1) {
 //       newStr += str[i];
 //     } 
 
@@ -127,15 +127,14 @@
   
 //   for (let key in obj1) {
 //     if (typeof obj1[key] === 'object') {
-//       if (!compareObj (obj1[key], obj2[key])) {
+//       if (!compareObj(obj1[key], obj2[key])) {
 //         return false;
 //       }
-//     }
-//     if (obj1[key] !== obj2[key]) {
+//     } else if (obj1[key] !== obj2[key]) {
 //       return false;
 //     }
-//     return true;
 //   }
+//   return true;
 // }
 
 // console.log(compareObj(
@@ -167,11 +166,10 @@
 //     for (let i = 1; i < N - 1; i += 1) {
 //       c += ('  ' + a);
 //       d += ('  ' + b);
-//       if (i === N - 2) {
-//         c += ('  ' + a);
-//         d += ('  ' + a);
-//       }
 //     }
+
+//     c += ('  ' + a);
+//     d += ('  ' + a);
 
 //     for (let j = 1; j <= N; j += 1) {
 //       if (j === 1 || j === N) {
@@ -194,13 +192,14 @@
 //     let key = str[i];
 
 //     if (!obj[key]) {
-//       obj[key] = true;
+//       obj[key] = 1;
+//     } else {
+//       obj[key] += 1;
 //     }
 //   }
 
 //   return obj;
 // }
-
 
 // function compareStr (str1, str2) {
 //   if (str1.length !== str2.length) {
@@ -222,3 +221,5 @@
 // console.log(compareStr('clock', 'lockc'));
 // console.log(compareStr('tree', 'three'));
 // console.log(compareStr('mttudd', 'dutmtd'));
+// console.log(compareStr('ABCC', 'ABCD'));
+
